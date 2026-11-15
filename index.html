@@ -4,11 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Veterinaria - Tailwind</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <h1>Veterinaria | PetShop</h1>
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#horario">Horarios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section>
+                <h2>Bienvenido a nuestra Veterinaria</h2>
+                <p>Ofrecemos servicios de calidad para tu mascota.</p>
+                <p>
+                    Contamos con profesionales capacitados y equipos modernos para el
+                    bienestar de tu mascota.
+                </p>
+                <button>Contactanos</button>
+            </section>
+
+            <section id="servicios">
+                <h2>Servicios Destacados</h2>
+                <article>
+                    <div>
+                        <img src="public/img/veterinario.jpg" alt="dos Veterinarios atendiendo a un perro">
+                    </div>
+                    <div>
+                        <h3>Consulta Veterinaria</h3>
+                        <p>
+                            Nuestro equipo de veterinarios altamente capacitados está listo
+                            para brindar atención médica de calidad a tu mascota. Realizamos
+                            consultas, diagnósticos y tratamientos personalizados para
+                            asegurar la salud y el bienestar de tu compañero peludo.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <img src="public/img/vacunacion-gato.png" alt="Veterinario aplicando vacuna a un gato" />
+                    </div>
+                    <div>
+                        <h3>Vacunación</h3>
+                        <p>
+                            Protege a tu mascota contra enfermedades mediante nuestro servicio
+                            de vacunación. Contamos con un calendario de vacunación completo y
+                            seguro para mantener a tu mascota saludable y protegida.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+
+                        <img src="public/img/peluqueria-perro.jpg"
+                            alt="un perro que acaba de recibir un corte de pelo" />
+                    </div>
+                    <div>
+                        <h3>Baño y Peluquería</h3>
+
+                        <p>
+                            Mima a tu mascota con nuestro servicio de baño y peluquería.
+                            Nuestro personal capacitado se encargará de mantener a tu mascota
+                            limpia, arreglada y feliz.
+                    </div>
+                    </p>
+                </article>
+
+                <article>
+                    <div>
+                        <img src="public/img/accesorios-de-mascotas.jpg"
+                            alt="varios productos de alimentos y accesorios para mascotas" />
+                    </div>
+                    <div>
+                        <h3>Venta de Alimentos y Accesorios</h3>
+                        <p>
+                            Encuentra una amplia variedad de alimentos y accesorios para tu
+                            mascota en nuestra tienda. Ofrecemos productos de alta calidad
+                            para satisfacer las necesidades de tu compañero peludo.
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <section id="horario">
+                <h2>Horarios de atención</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Día</th>
+                            <th scope="col">Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Lunes a sábado</th>
+                            <td>9:00 a. m. - 9:00 p. m.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Domingos y festivos</th>
+                            <td>9:00 a. m. - 6:00 p. m.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="contacto">
+                <h2>Contactanos</h2>
+                <p>¿Tienes alguna pregunta o necesitas más información?</p>
+                <p><strong>¡No dudes en contactarnos!</strong></p>
+
+                <form>
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input id="name" name="name" type="text" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <div>
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" required />
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
+                    </div>
+                    <button>Enviar</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                &copy; 2026 Veterinaria | Petshop. Todos los derechos reservados.
+            </p>
+        </footer>
+    </header>
 
 </body>
 
