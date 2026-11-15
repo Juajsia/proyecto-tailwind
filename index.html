@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body>
+<body class="bg-fondo">
     <header>
         <nav
             class="flex flex-col gap-4 bg-primario px-4 py-4 text-white sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-16">
@@ -26,80 +26,85 @@
             </ul>
         </nav>
 
-        <main>
+        <main class="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
 
-            <section>
-                <h2>Bienvenido a nuestra Veterinaria</h2>
-                <p>Ofrecemos servicios de calidad para tu mascota.</p>
-                <p>
+            <section class="px-5 py-10 text-center text-texto sm:px-10 sm:py-14 lg:py-20">
+                <h2 class="text-3xl font-bold text-primario sm:text-4xl lg:text-5xl">
+                    Bienvenido a nuestra Veterinaria
+                </h2>
+                <p class="mx-auto mt-4 max-w-2xl leading-relaxed">Ofrecemos servicios de calidad para tu mascota.</p>
+                <p class="mx-auto mt-3 max-w-2xl leading-relaxed">
                     Contamos con profesionales capacitados y equipos modernos para el
                     bienestar de tu mascota.
                 </p>
-                <button>Contactanos</button>
+                <button
+                    class="mt-8 cursor-pointer rounded-lg border-2 border-primario bg-transparent px-6 py-3 font-semibold text-primario transition-colors duration-200 hover:bg-primario hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primario">
+                    Contactanos
+                </button>
             </section>
 
-            <section id="servicios">
-                <h2>Servicios Destacados</h2>
-                <article>
-                    <div>
-                        <img src="public/img/veterinario.jpg" alt="dos Veterinarios atendiendo a un perro">
-                    </div>
-                    <div>
-                        <h3>Consulta Veterinaria</h3>
-                        <p>
-                            Nuestro equipo de veterinarios altamente capacitados está listo
-                            para brindar atención médica de calidad a tu mascota. Realizamos
-                            consultas, diagnósticos y tratamientos personalizados para
-                            asegurar la salud y el bienestar de tu compañero peludo.
-                        </p>
-                    </div>
-                </article>
+            <section id="servicios" class="py-12 sm:py-16">
+                <h2 class="mb-8 text-center text-3xl font-bold text-primario sm:mb-10 sm:text-4xl">
+                    Servicios Destacados
+                </h2>
+                <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    <article
+                        class="flex flex-col overflow-hidden rounded-xl border border-fondo bg-white shadow-md transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg">
+                        <img class="h-48 w-full object-cover" src="public/img/veterinario.jpg"
+                            alt="dos Veterinarios atendiendo a un perro">
+                        <div class="flex flex-1 flex-col p-5">
+                            <h3 class="mb-3 text-xl font-bold text-primario">Consulta Veterinaria</h3>
+                            <p class="leading-relaxed text-texto">
+                                Nuestro equipo de veterinarios altamente capacitados está listo
+                                para brindar atención médica de calidad a tu mascota. Realizamos
+                                consultas, diagnósticos y tratamientos personalizados para
+                                asegurar la salud y el bienestar de tu compañero peludo.
+                            </p>
+                        </div>
+                    </article>
 
-                <article>
-                    <div>
-                        <img src="public/img/vacunacion-gato.png" alt="Veterinario aplicando vacuna a un gato" />
-                    </div>
-                    <div>
-                        <h3>Vacunación</h3>
-                        <p>
-                            Protege a tu mascota contra enfermedades mediante nuestro servicio
-                            de vacunación. Contamos con un calendario de vacunación completo y
-                            seguro para mantener a tu mascota saludable y protegida.
-                        </p>
-                    </div>
-                </article>
+                    <article
+                        class="flex flex-col overflow-hidden rounded-xl border border-fondo bg-white shadow-md transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg">
+                        <img class="h-48 w-full object-cover" src="public/img/vacunacion-gato.png"
+                            alt="Veterinario aplicando vacuna a un gato" />
+                        <div class="flex flex-1 flex-col p-5">
+                            <h3 class="mb-3 text-xl font-bold text-primario">Vacunación</h3>
+                            <p class="leading-relaxed text-texto">
+                                Protege a tu mascota contra enfermedades mediante nuestro servicio
+                                de vacunación. Contamos con un calendario de vacunación completo y
+                                seguro para mantener a tu mascota saludable y protegida.
+                            </p>
+                        </div>
+                    </article>
 
-                <article>
-                    <div>
-
-                        <img src="public/img/peluqueria-perro.jpg"
+                    <article
+                        class="flex flex-col overflow-hidden rounded-xl border border-fondo bg-white shadow-md transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg">
+                        <img class="h-48 w-full object-cover" src="public/img/peluqueria-perro.jpg"
                             alt="un perro que acaba de recibir un corte de pelo" />
-                    </div>
-                    <div>
-                        <h3>Baño y Peluquería</h3>
+                        <div class="flex flex-1 flex-col p-5">
+                            <h3 class="mb-3 text-xl font-bold text-primario">Baño y Peluquería</h3>
+                            <p class="leading-relaxed text-texto">
+                                Mima a tu mascota con nuestro servicio de baño y peluquería.
+                                Nuestro personal capacitado se encargará de mantener a tu mascota
+                                limpia, arreglada y feliz.
+                            </p>
+                        </div>
+                    </article>
 
-                        <p>
-                            Mima a tu mascota con nuestro servicio de baño y peluquería.
-                            Nuestro personal capacitado se encargará de mantener a tu mascota
-                            limpia, arreglada y feliz.
-                    </div>
-                    </p>
-                </article>
-
-                <article>
-                    <div>
-                        <img src="public/img/accesorios-de-mascotas.jpg"
+                    <article
+                        class="flex flex-col overflow-hidden rounded-xl border border-fondo bg-white shadow-md transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg">
+                        <img class="h-48 w-full object-cover" src="public/img/accesorios-de-mascotas.jpg"
                             alt="varios productos de alimentos y accesorios para mascotas" />
-                    </div>
-                    <div>
-                        <h3>Venta de Alimentos y Accesorios</h3>
-                        <p>
-                            Encuentra una amplia variedad de alimentos y accesorios para tu
-                            mascota en nuestra tienda. Ofrecemos productos de alta calidad
-                            para satisfacer las necesidades de tu compañero peludo.
-                        </p>
-                    </div>
-                </article>
+                        <div class="flex flex-1 flex-col p-5">
+                            <h3 class="mb-3 text-xl font-bold text-primario">Venta de Alimentos y Accesorios</h3>
+                            <p class="leading-relaxed text-texto">
+                                Encuentra una amplia variedad de alimentos y accesorios para tu
+                                mascota en nuestra tienda. Ofrecemos productos de alta calidad
+                                para satisfacer las necesidades de tu compañero peludo.
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </section>
 
             <section id="horario">
