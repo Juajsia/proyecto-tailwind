@@ -107,48 +107,63 @@
                 </div>
             </section>
 
-            <section id="horario">
-                <h2>Horarios de atención</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Día</th>
-                            <th scope="col">Horario</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Lunes a sábado</th>
-                            <td>9:00 a. m. - 9:00 p. m.</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Domingos y festivos</th>
-                            <td>9:00 a. m. - 6:00 p. m.</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <section id="horario" class="rounded-2xl bg-fondo px-5 py-10 sm:px-10 sm:py-14">
+                <h2 class="mb-8 text-center text-3xl font-bold text-primario sm:text-4xl">Horarios de atención</h2>
+                <div class="mx-auto max-w-3xl overflow-x-auto rounded-xl border border-fondo bg-white shadow-sm">
+                    <table class="w-full min-w-80 border-collapse text-left text-texto">
+                        <thead class="bg-primario text-white">
+                            <tr>
+                                <th class="px-4 py-3 font-semibold sm:px-6" scope="col">Día</th>
+                                <th class="px-4 py-3 font-semibold sm:px-6" scope="col">Horario</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-fondo">
+                            <tr class="hover:bg-fondo">
+                                <th class="px-4 py-4 font-semibold text-primario sm:px-6" scope="row">Lunes a sábado
+                                </th>
+                                <td class="px-4 py-4 sm:px-6">9:00 a. m. - 9:00 p. m.</td>
+                            </tr>
+                            <tr class="hover:bg-fondo">
+                                <th class="px-4 py-4 font-semibold text-primario sm:px-6" scope="row">Domingos y
+                                    festivos</th>
+                                <td class="px-4 py-4 sm:px-6">9:00 a. m. - 6:00 p. m.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
 
-            <section id="contacto">
-                <h2>Contactanos</h2>
-                <p>¿Tienes alguna pregunta o necesitas más información?</p>
-                <p><strong>¡No dudes en contactarnos!</strong></p>
+            <section id="contacto" class="mt-12 rounded-2xl bg-fondo px-5 py-10 text-texto sm:mt-16 sm:px-10 sm:py-14">
+                <h2 class="mb-4 text-center text-3xl font-bold text-primario sm:text-4xl">Contactanos</h2>
+                <p class="mx-auto max-w-xl text-center leading-relaxed">
+                    ¿Tienes alguna pregunta o necesitas más información?
+                </p>
+                <p class="mb-8 mt-2 text-center font-semibold text-primario">¡No dudes en contactarnos!</p>
 
-                <form>
-                    <div>
-                        <label for="name">Nombre</label>
-                        <input id="name" name="name" type="text" placeholder="Escribe tu nombre" required>
+                <form class="mx-auto max-w-2xl space-y-5 rounded-xl bg-white p-5 shadow-sm sm:p-8">
+                    <div class="space-y-2">
+                        <label class="block font-semibold text-primario" for="name">Nombre</label>
+                        <input
+                            class="w-full rounded-lg border border-primario/30 px-4 py-3 text-texto placeholder:text-texto/60 focus:border-primario focus:outline-none focus:ring-2 focus:ring-primario/30"
+                            id="name" name="name" type="text" placeholder="Escribe tu nombre" required>
                     </div>
-                    <div>
-                        <label for="correo">Correo electrónico</label>
-                        <input type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" required />
+                    <div class="space-y-2">
+                        <label class="block font-semibold text-primario" for="correo">Correo electrónico</label>
+                        <input
+                            class="w-full rounded-lg border border-primario/30 px-4 py-3 text-texto placeholder:text-texto/60 focus:border-primario focus:outline-none focus:ring-2 focus:ring-primario/30"
+                            type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" required />
                     </div>
-                    <div>
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."
+                    <div class="space-y-2">
+                        <label class="block font-semibold text-primario" for="mensaje">Mensaje</label>
+                        <textarea
+                            class="w-full resize-y rounded-lg border border-primario/30 px-4 py-3 text-texto placeholder:text-texto/60 focus:border-primario focus:outline-none focus:ring-2 focus:ring-primario/30"
+                            id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."
                             required></textarea>
                     </div>
-                    <button>Enviar</button>
+                    <button
+                        class="cursor-pointer rounded-lg border-2 border-primario bg-transparent px-6 py-3 font-semibold text-primario transition-colors duration-200 hover:bg-primario hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primario">
+                        Enviar
+                    </button>
                 </form>
             </section>
         </main>
